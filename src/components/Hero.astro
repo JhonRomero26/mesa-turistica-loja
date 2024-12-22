@@ -1,0 +1,17 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<section class="relative h-dvh w-full overflow-hidden">
+  <div class="inset-0 bg-black/30 absolute" />
+  <div class="flex justify-center items-center absolute inset-0 md:max-w-4xl max-w-lg mx-auto p-8">
+   <div class="flex flex-col md:flex-row gap-x-8 items-center">
+    <Logo textColor="#fff" width="320" backgroundColor="transparent" />
+    <div class="text-white text-center md:text-left">
+      <h1 class="text-4xl md:text-6xl drop-shadow-[0_2px_5px_rgba(0,0,0,0.8)] mb-4">Mesa Turistica Loja</h1>
+      <p class="drop-shadow-[0_2px_5px_rgba(0,0,0,0.8)] text-gray-200 md:text-lg">Trabajamos en conjunto para el fortalecimiento del destino turístico en Loja</p>
+    </div>
+   </div>
+  </div>
+  <video src="/hero-video.mp4" class="h-full w-full object-center object-cover" loop preload="metadata" autoplay muted />
+</section>

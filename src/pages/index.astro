@@ -1,11 +1,17 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import AboutUs from '@/components/AboutUs.astro';
+import Hero from '@/components/Hero.astro';
+import OrganizationalStructure from '@/components/OrganizationalStructure.astro';
+import OrganizationalValues from '@/components/OrganizationalValues.astro';
+import Layout from '@/layouts/Layout.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+	title="Mesa Turistica de Loja"
+	description="El portal para explorar lo mejor del turismo en la provincia de Loja, Ecuador. Descubre destinos únicos, experiencias culturales auténticas y planes personalizados para disfrutar de la riqueza natural, histórica y gastronómica de nuestra región."
+>
+	<Hero />
+	<AboutUs />
+	<OrganizationalStructure />
+	<OrganizationalValues />
 </Layout>

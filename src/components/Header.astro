@@ -1,0 +1,80 @@
+---
+import MenuIcon from "@/icons/MenuIcon.astro";
+import XIcon from "@/icons/XIcon.astro";
+import Logo from "./Logo.astro";
+
+const menuLinks = [
+  { label: "Inicio", link: "/" },
+  { label: "Socios", link: "/partners" },
+  { label: "Contactanos", link: "/contact-us" },
+  { label: "Conoce Loja", link: "/visit-loja" },
+]
+---
+
+
+<header class="header fixed top-0 left-0 right-0 w-full z-30">
+  <div class="flex justify-between items-center container">
+    <a class="block" href="/">
+      <Logo backgroundColor="transparent" height="100px" />
+    </a>
+    
+    <button class="btn btn-icon md:hidden" id="burguer-menu">
+      <MenuIcon />
+    </button>
+
+    <nav class="max-md:absolute md:translate-x-0 max-md:translate-x-full right-0 top-0 max-md:w-sm max-md:h-dvh max-md:bg-white transition-transform">
+      <div class="relative md:hidden">
+        <Logo class="justify-self-center" width="200" />
+        <button class="btn btn-icon md:hidden absolute top-4 right-4" id="close-menu">
+          <XIcon />
+        </button>
+      </div>
+      <ul class="flex max-md:flex-col">
+        {menuLinks.map(({ label, link }) => (
+          <li><a class="block px-8 py-4 hover:bg-black hover:text-white transition-colors md:px-6 md:py-4 font-semibold" href={link}>{label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+<div id="header-overlay" class="absolute inset-0 bg-black/70 z-20 hidden open:opacity-100 transition-discrete starting:open:opacity-0" />
+
+<style>
+  .header {
+    animation-timeline: scroll();
+    animation-name: header-scroll;
+    animation-range: 0 500px;
+  }
+
+  @keyframes header-scroll {
+    from {
+      background-color: transparent;
+      backdrop-filter: blur(0);
+    } to {
+      background-color: rgba(255 255 255 / 60%);
+      backdrop-filter: blur(10px);
+    }
+  }
+</style>
+
+<script>
+  const init = () => {
+    const $burguer = document.querySelector("#burguer-menu")
+    const $close = document.querySelector("#close-menu")
+    const $nav = document.querySelector("nav")
+    const $overlay = document.querySelector("#header-overlay")
+
+    const handleToggleMenu = () => {
+      $nav?.classList.toggle("max-md:translate-x-full")
+      $overlay?.classList.toggle("hidden")
+    }
+
+    $burguer?.addEventListener("click", handleToggleMenu)
+    $close?.addEventListener("click", handleToggleMenu)
+    $overlay?.addEventListener("click", handleToggleMenu)
+  }
+
+  init()
+
+  document.addEventListener('astro:after-swap', init)
+</script>

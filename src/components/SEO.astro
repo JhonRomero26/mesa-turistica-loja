@@ -1,0 +1,60 @@
+---
+import nunito from "@fontsource-variable/nunito/files/nunito-latin-wght-normal.woff2"
+import type { Preload } from '@/types/Preload';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  canonical?: string;
+  preload?: Preload[];
+}
+
+const {
+  title,
+  description,
+  image = "/og.png",
+  canonical = Astro.url.pathname,
+  preload
+} = Astro.props
+
+const imageURL = new URL(image, Astro.site).toString()
+const canonicalURL = new URL(canonical, Astro.site).toString()
+---
+
+<title>{title}</title>
+
+<meta charset="UTF-8" />
+<meta name="description" content={description} />
+
+<link rel="preload" href={nunito} as="font" type="font/woff2" crossorigin="anonymous" />
+
+{preload?.map(({ href, as, type, rel = "preload", crossorigin  }) => (
+  <link href={href} as={as} rel={rel} type={type} crossorigin={crossorigin} />
+))}
+
+<link rel="canonical" href={canonicalURL} />
+<meta name="keywords" content="turismo, loja, naturaleza, hotel, viajar, turistica" />
+<meta name="viewport" content="width=device-width" />
+
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageURL} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.site} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageURL} />
+<meta name="twitter:creator" content="@mesaturisloja" />
+<meta name="twitter:site" content="@mesaturisloja" />
+<meta name="twitter:url" content={Astro.site} />
+
+
+<!-- Google robots -->
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
