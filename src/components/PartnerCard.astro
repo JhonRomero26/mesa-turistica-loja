@@ -1,0 +1,64 @@
+---
+import MapPinOutlineIcon from "@/icons/MapPinOutlineIcon.astro";
+import PhoneOutlineIcon from "@/icons/PhoneOutlineIcon.astro";
+import Image from "astro/components/Image.astro";
+
+interface Props {
+  title: string
+  website: string
+  phone: string
+  address: string
+  avatar: string
+  portal: string
+}
+
+const {
+  title,
+  website,
+  phone,
+  address,
+  avatar,
+  portal
+} = Astro.props
+---
+
+<article class="bg-white rounded-lg border border-neutral-200">
+  <div class="p-3">
+    <Image
+      loading="lazy"
+      width={300}
+      height={100}
+      alt={`${title} portal`}
+      class="rounded-lg aspect-video w-full object-cover object-center h-auto" src={portal} />
+  </div>
+  <div class="px-3 py-4">
+    <Image
+      loading="lazy"
+      width={300}
+      height={100}
+      alt={`${title} logo`}
+      class="w-32 object-cover object-center h-32 rounded-full border-white border-4 -mt-28 mb-4 mx-auto relative z-10"
+      src={avatar}
+    />
+    <div class="flex gap-4 items-start">
+      <div class="w-full">
+        <h3 class="text-center text-balance text-xl font-bold mb-4">
+          <a target="_blank" rel="noreferrer nofollow" href={website} class="hover:underline">
+            {title}
+          </a>
+        </h3>
+
+        <div class="mt-5 space-y-3">
+          <a rel="noreferrer nofollow" href={`telf:${phone}`} class="inline-flex items-center gap-2 text-gray-600 text-sm text-balance hover:underline">
+            <span class="block"><PhoneOutlineIcon class="w-6 h-6" /></span> 
+            <span>{phone}</span>
+          </a>
+          <div class="inline-flex items-start gap-2 text-gray-600 text-sm text-balance">
+            <span class="block"><MapPinOutlineIcon class="w-6 h-6" /></span>
+            <span>{address}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

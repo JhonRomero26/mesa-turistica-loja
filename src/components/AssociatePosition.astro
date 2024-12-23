@@ -1,0 +1,13 @@
+---
+interface Props {
+  position: string;
+  name: string;
+}
+
+const { position, name } = Astro.props
+---
+
+<article class="relative p-4">
+  <span class="block font-bold text-lg">{position}</span>
+  <span class="block text-gray-800 mt-2">{name}</span>
+</article>

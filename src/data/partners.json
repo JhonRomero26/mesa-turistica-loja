@@ -1,0 +1,192 @@
+{
+  "hospedaje": [
+    {
+      "title": "Quo Vadis Hotel",
+      "address": "Av. Isidro Ayora y Av. 8 de Diciembre, Loja 110150 Ecuador",
+      "phone": "+593 (07) 258 1805",
+      "website": "https://quovadishotel.com.ec/",
+      "avatar": "/partners/hotel-quo-vadis-avatar.webp",
+      "portal": "/partners/hotel-quo-vadis-portal.webp"
+    },
+    {
+      "title": "Hotel Podocarpus",
+      "address": "Jose Antonio Eguiguren y 18 de Noviembre, Loja 110150 Ecuador",
+      "phone": "+593 98 392 0905",
+      "website": "https://www.hotelpodocarpus.com.ec/",
+      "avatar": "/partners/hotel-podocarpus-avatar.webp",
+      "portal": "/partners/hotel-podocarpus-portal.webp"
+    },
+    {
+      "title": "Hotel San Sebastián",
+      "address": "18 de Noviembre entre Azuay y Mercadillo, Loja 110150 Ecuador",
+      "phone": "+593 99 324 5272",
+      "website": "https://www.hotelpodocarpus.com.ec/",
+      "avatar": "/partners/hotel-san-sebastian-avatar.webp",
+      "portal": "/partners/hotel-san-sebastian-portal.webp"
+    },
+    {
+      "title": "Hotel Carrión",
+      "address": "Colón 152-41 y 18 de Noviembre frente al Parque Bolívar, Loja 110150 Ecuador",
+      "phone": "+593 99 131 0939",
+      "website": "https://hotelcarrionloja.com/",
+      "avatar": "/partners/hotel-carrion-avatar.webp",
+      "portal": "/partners/hotel-carrion-portal.webp"
+    },
+    {
+      "title": "Hotel Villonaco",
+      "address": "Jose Antonio Eguiguren y 18 de Noviembre, Loja 110150 Ecuador",
+      "phone": "+593 95 896 8132",
+      "website": "https://www.facebook.com/hotelvillonacoloja",
+      "avatar": "/partners/hotel-villonaco-avatar.webp",
+      "portal": "/partners/hotel-villonaco-portal.webp"
+    },
+    {
+      "title": "Casben Hotel",
+      "address": "18 de Noviembre entre Azuay y Mercadillo, Loja 110150 Ecuador",
+      "phone": "+593 (07) 272 0940",
+      "website": "http://hotelcasben.com/",
+      "avatar": "/partners/hotel-casben-avatar.webp",
+      "portal": "/partners/hotel-casben-portal.webp"
+    },
+    {
+      "title": "Hotel París",
+      "address": "10 de agosto y Avenida Universitaria, Loja 110150 Ecuador",
+      "phone": "+593 99 692 4774",
+      "website": "https://www.facebook.com/hotelparisloja/",
+      "avatar": "/partners/hotel-paris-avatar.webp",
+      "portal": "/partners/hotel-paris-portal.webp"
+    },
+    {
+      "title": "Hotel Villonaco",
+      "address": "Jose Antonio Eguiguren y 18 de Noviembre, Loja 110150 Ecuador",
+      "phone": "+593 97 902 8069",
+      "website": "https://www.facebook.com/villaamadaloja/",
+      "avatar": "/partners/villa-amada-avatar.webp",
+      "portal": "/partners/villa-amada-portal.webp"
+    },
+    {
+      "title": "Hostelería Paraíso | Vilcabamba",
+      "address": "Av. Eterna Juventud, Vilcabamba junto al parque de la Madre, Loja 110150 Ecuador",
+      "phone": "+593 98 844 8057",
+      "website": "https://www.hosteriaparaiso.com/",
+      "avatar": "/partners/hostal-paraiso-avatar.webp",
+      "portal": "/partners/hostal-paraiso-portal.webp"
+    },
+    {
+      "title": "Casa del Peregrino | El Cisne",
+      "address": "Parroquia El Cisne, Loja 110118 Ecuador",
+      "phone": "+593 99 909 7470",
+      "website": "https://santuariodeelcisne.org/casa-del-peregrino/",
+      "avatar": "/partners/casa-del-peregrino-avatar.webp",
+      "portal": "/partners/casa-del-peregrino-portal.webp"
+    },
+    {
+      "title": "Finca Agroturística Don Dalecio | Celica",
+      "address": "Barrio El Empalme frente a la escuela FAE, Loja 110401 Ecuador",
+      "phone": "+593 98 619 6807",
+      "website": "https://www.facebook.com/fincadondalecio/",
+      "avatar": "/partners/don-dalecio-avatar.webp",
+      "portal": "/partners/don-dalecio-portal.webp"
+    }
+  ],
+  "restaurantes": [
+    {
+      "title": "Aurora Restaurante",
+      "address": "Bolívar y Azuay esquina, Loja 110150 Ecuador",
+      "phone": "+593 98 458 4300",
+      "website": "https://www.facebook.com/aurorarc2021/",
+      "avatar": "/partners/aurora-avatar.webp",
+      "portal": "/partners/aurora-portal.webp"
+    },
+    {
+      "title": "Rincón de Borgoña Restaurant",
+      "address": "Puerta de la ciudad, segundo piso, Loja 110150 Ecuador",
+      "phone": "+593 99 743 5950",
+      "website": "https://facebook.com/p/Rinc%C3%B3n-de-Borgo%C3%B1a-Restaurant-y-Casa-de-Banquetes-100063589359967/",
+      "avatar": "/partners/rincon-borgona-avatar.webp",
+      "portal": "/partners/rincon-borgona-portal.webp"
+    },
+    {
+      "title": "Viviates Coffee Shop",
+      "address": "En los bajos de Eudique Hotel, cerca al Terminal Terrestre, Loja 110150 Ecuador",
+      "phone": "+593 99 235 4992",
+      "website": "https://www.facebook.com/cafeviviates",
+      "avatar": "/partners/cafe-viviates-avatar.webp",
+      "portal": "/partners/cafe-viviates-portal.webp"
+    },
+    {
+      "title": "Restaurante Mama Lola",
+      "address": "Av Salvador Bustamante y Santa Rosa, Loja 110150 Ecuador",
+      "phone": "+593 98 340 5586",
+      "website": "https://mamalolarestaurante.com/",
+      "avatar": "/partners/mama-lola-avatar.webp",
+      "portal": "/partners/mama-lola-portal.webp"
+    },
+    {
+      "title": "Cafetería Emporio Lojano",
+      "address": "10 de agosto entre Bolívar y Sucre, Loja 110150 Ecuador",
+      "phone": "+593 98 416 0038",
+      "website": "http://emporiolojano.com/",
+      "avatar": "/partners/emporio-lojano-avatar.webp",
+      "portal": "/partners/emporio-lojano-portal.webp"
+    },
+    {
+      "title": "Restaurante Casa Montubia",
+      "address": "Calle Manuel Espinosa y Quitumbe, Loja 110150 Ecuador",
+      "phone": "+593 99 994 1503",
+      "website": "https://www.facebook.com/p/Casa-Montubia-100091606396668/",
+      "avatar": "/partners/casa-montubia-avatar.webp",
+      "portal": "/partners/casa-montubia-portal.webp"
+    },
+    {
+      "title": "Apetitto Cafetería",
+      "address": "18 de Noviembre y Cariamanga (junto al cajero del Banco de Loja), Loja 110150 Ecuador",
+      "phone": "+593 99 692 4774",
+      "website": "https://www.facebook.com/ApetittoLoja/",
+      "avatar": "/partners/apetito-avatar.webp",
+      "portal": "/partners/apetito-portal.webp"
+    },
+    {
+      "title": "Nia Kapro Cafetería | Zapotillo",
+      "address": "Zapotillo Km 1, Loja 110901 Ecuador",
+      "phone": "+593 97 902 8069",
+      "website": "https://www.facebook.com/niakapro/",
+      "avatar": "/partners/nia-kapro-avatar.webp",
+      "portal": "/partners/nia-kapro-portal.webp"
+    }
+  ],
+  "viajesTours": [
+    {
+      "title": "Aerotrips",
+      "address": "Francisco Valdiviezo y Bolivar Bailón, Loja 110150 Ecuador",
+      "phone": "+593 98 810 6458",
+      "website": "https://www.facebook.com/AEROTRIPSLOJA/",
+      "avatar": "/partners/aerotrips-avatar.webp",
+      "portal": "/partners/aerotrips-portal.webp"
+    },
+    {
+      "title": "Amazon Travel",
+      "address": "Amazonas y Espejo frente al puerto de la Marina, Francisco de Orellana, Ecuador",
+      "phone": "+593 99 448 5065",
+      "website": "https://www.facebook.com/AmazonTravelTours/",
+      "avatar": "/partners/amazon-travel-avatar.webp",
+      "portal": "/partners/amazon-travel-portal.webp"
+    },
+    {
+      "title": "Lojaventura",
+      "address": "En los bajos de Eudique Hotel, cerca al Terminal Terrestre, Loja 110150 Ecuador",
+      "phone": "+593 98 527 0354",
+      "website": "https://www.facebook.com/lojaventura/",
+      "avatar": "/partners/lojaventura-avatar.webp",
+      "portal": "/partners/lojaventura-portal.webp"
+    },
+    {
+      "title": "C&T Travel",
+      "address": "Antonio José de Sucre entre Gonzanama y Celica, Loja 110150 Ecuador",
+      "phone": "+593 99 696 8393",
+      "website": "https://www.facebook.com/cyttravelloja/",
+      "avatar": "/partners/ct-travel-avatar.webp",
+      "portal": "/partners/ct-travel-portal.webp"
+    }
+  ]
+}

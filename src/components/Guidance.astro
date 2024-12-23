@@ -1,0 +1,59 @@
+---
+import TagIcon from "@/icons/TagIcon.astro";
+import Tile from "@/components/Tile.astro";
+import UserDollarOutlineIcon from "@/icons/UserDollarOutlineIcon.astro";
+import MapOutlineIcon from "@/icons/MapOutlineIcon.astro";
+import UsersGroupOutlineIcon from "@/icons/UsersGroupOutlineIcon.astro";
+---
+
+<section class="py-64 bg-black">
+  <div class="container flex gap-24 max-lg:flex-col">
+    <div class="flex-2 max-w-xl">
+      <h3 class="text-4xl text-white mb-10 font-bold">Gestión Turística Integral: Gobernanza Inspirada en la OMT</h3>
+      <div class="sk" />
+      <p class="text-gray-200 xl:text-lg text-pretty">
+        Guiados por los lineamientos de la Organización Mundial del Turismo (OMT), nuestra gestión se basa en principios de Gobernanza Turística y en el desarrollo de un Sistema Turístico Integral.
+      </p>
+    </div>
+
+    <div class="flex-3 grid gap-8 grid-cols-2">
+      <Tile backgroundIcon="#000" foregroundIcon="#fff" class="bg-white" title="Oferta" description="Desarrollo y promoción de productos y servicios de calidad.">
+        <TagIcon slot="icon" />
+      </Tile>
+
+      <Tile backgroundIcon="#000" foregroundIcon="#fff" class="bg-white" title="Demanda" description="Desarrollo y promoción de productos y servicios de calidad.">
+        <UserDollarOutlineIcon slot="icon" />
+      </Tile>
+
+      <Tile backgroundIcon="#000" foregroundIcon="#fff" class="bg-white" title="Espacio geográfico" description="Desarrollo y promoción de productos y servicios de calidad.">
+        <MapOutlineIcon slot="icon" />
+      </Tile>
+
+      <Tile backgroundIcon="#000" foregroundIcon="#fff" class="bg-white" title="Operadores del mercado turístico" description="Desarrollo y promoción de productos y servicios de calidad.">
+        <UsersGroupOutlineIcon slot="icon" />
+      </Tile>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sk {
+    height: 2;
+    width: 100%;
+    animation-name: skeletonImage;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes skeletonImage {
+  from {
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, #DF040C 0%, #DF040C 16.66%, #002983 16.66%, #002983 33.33%, #FFF002 33.33%, #FFF002 66.66%, #002983 66.66%, #002983 83.33%, , #DF040C 83.33%, #DF040C 100%);
+  } to {
+    background-position-x: -135%;
+  } 
+  }
+</style>
