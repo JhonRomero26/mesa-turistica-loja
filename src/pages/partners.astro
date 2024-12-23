@@ -3,19 +3,18 @@ import PartnerCard from "@/components/PartnerCard.astro";
 import Layout from "@/layouts/Layout.astro";
 import { hospedaje, restaurantes, viajesTours } from "@/data/partners.json"
 import SectionPartners from "@/components/SectionPartners.astro";
+import HeroWithColor from "@/components/HeroWithColor.astro";
 ---
 
 <Layout title="Nuestros Socios | Mesa Turística de Loja" description="">
-  <section class="bg-neutral-300 rounded-b-4xl py-56 min-h-96">
-    <div class="container">
-      <div class="max-w-xl">
-        <h1 class="text-6xl font-bold text-balance mb-4">Nuestros socios</h1>
-        <p class="text-pretty text-neutral-800 xl:text-lg">
-          En la Mesa Técnica de Desarrollo Turístico de Loja, trabajamos con una red de socios estratégicos que nos permiten ofrecer servicios de calidad y promover el turismo en la región.
-        </p>
-      </div>
+  <HeroWithColor class="bg-neutral-300">
+    <div class="max-w-xl">
+      <h1 class="text-6xl font-bold text-balance mb-4">Nuestros socios</h1>
+      <p class="text-pretty text-neutral-800 xl:text-lg">
+        En la Mesa Técnica de Desarrollo Turístico de Loja, trabajamos con una red de socios estratégicos que nos permiten ofrecer servicios de calidad y promover el turismo en la región.
+      </p>
     </div>
-  </section>
+  </HeroWithColor>
   
   <SectionPartners title="Alojamiento">
     {hospedaje.map(({ title, address, website, avatar, phone, portal }) => (

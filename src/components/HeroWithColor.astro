@@ -1,0 +1,13 @@
+---
+interface Props {
+  class?: string
+}
+
+const { class: className } = Astro.props
+---
+
+<section class:list={["rounded-b-4xl py-48 min-h-96", className]}>
+  <div class="container">
+    <slot />
+  </div>
+</section>

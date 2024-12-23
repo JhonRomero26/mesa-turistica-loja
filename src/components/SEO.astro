@@ -29,8 +29,8 @@ const canonicalURL = new URL(canonical, Astro.site).toString()
 
 <link rel="preload" href={nunito} as="font" type="font/woff2" crossorigin="anonymous" />
 
-{preload?.map(({ href, as, type, rel = "preload", crossorigin  }) => (
-  <link href={href} as={as} rel={rel} type={type} crossorigin={crossorigin} />
+{preload?.map(({ href, as, type, rel = "preload", crossorigin, integrity  }) => (
+  <link integrity={integrity} href={href} as={as} rel={rel} type={type} crossorigin={crossorigin} />
 ))}
 
 <link rel="canonical" href={canonicalURL} />

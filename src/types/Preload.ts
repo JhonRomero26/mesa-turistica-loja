@@ -2,6 +2,7 @@ export interface Preload {
   as: string;
   href: string;
   type: string;
-  rel?: "preload" | "prefetch";
+  integrity?: string;
+  rel?: "stylesheet" | "preload" | "prefetch";
   crossorigin?: "anonymous" | "use-credentials";
 }

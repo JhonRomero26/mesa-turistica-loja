@@ -1,10 +1,46 @@
 ---
+import HeroWithColor from "@/components/HeroWithColor.astro";
+import MapPinOutlineIcon from "@/icons/MapPinOutlineIcon.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout
   title="Contáctanos | Mesa Turística de Loja"
   description="¿Tienes alguna pregunta o sugerencia? ¡Contáctanos! Estamos aquí para ayudarte."
+  preload={[
+    {
+      rel: "stylesheet",
+      href: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+      as: "style",
+      integrity: "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=",
+      type: "text/css"
+    }
+  ]}
 >
-  <section class="h-[calc(100dvh-160px)]"></section>
+
+  <HeroWithColor class="bg-neutral-300">
+    <div class="max-w-xl">
+      <h1 class="text-6xl font-bold text-balance mb-4">Nuestro contacto</h1>
+      <p class="text-pretty text-neutral-800 xl:text-lg">
+        ¿Tienes alguna pregunta o sugerencia? Estamos aquí para ayudarte. Pretendemos ayudarte en todo lo que necesites. ¡Contáctanos!
+      </p>
+    </div>
+  </HeroWithColor>
+
+
+  <section class="py-32 h-[calc(100dvh-160px)]">
+    <div class="container">
+      <h2 class="text-4xl mb-4 font-bold text-balance">
+        Nuestra ubicación
+      </h2>
+      <div class="text-neutral-800 items-center flex gap-2 mb-16">
+        <span class="inline-block">
+          <MapPinOutlineIcon class="w-6 h-6" />
+        </span>
+          Colón 152-41 y 18 de Noviembre frente al Parque Bolívar
+      </div>
+      <iframe class="h-96 w-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3980.121402925191!2d-79.204636!3d-3.9954520000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cb48019c3cb695%3A0xb31b5c6092e748ac!2sCrist%C3%B3bal%20Col%C3%B3n%20152-41%2C%20Loja%20110108%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1734982546434!5m2!1ses!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+
+    </div>
+  </section>
 </Layout>
