@@ -1,4 +1,6 @@
 ---
+import GridContainer from './GridContainer.astro'
+
 interface Props {
   title: string
 }
@@ -9,8 +11,8 @@ const { title } = Astro.props
 <section class="pt-32 pb-16">
   <div class="container">
     <h2 class="text-neutral-700 text-5xl text-balance max-w-xl font-bold mb-16">{title}</h2>
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+    <GridContainer minWidth="300px" gap="1rem">
       <slot />  
-    </div>
+    </GridContainer>
   </div>
 </section>

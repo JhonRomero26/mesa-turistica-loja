@@ -1,0 +1,37 @@
+---
+import GridContainer from "@/components/GridContainer.astro";
+import HeroWithColor from "@/components/HeroWithColor.astro";
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout
+  title=""
+  description=""
+>
+  <HeroWithColor
+    class="bg-blue-200"
+  >
+    <div class="max-w-xl">
+      <h1 class="text-6xl font-bold text-balance mb-4">Una ciudad de cultura y paisajes</h1>
+      <p class="text-pretty text-neutral-800 xl:text-lg">
+        Descubre la ciudad de Loja, un lugar lleno de cultura historias y paisajes maravillosos. ¡Ven a visitarnos!
+      </p>
+    </div>
+  </HeroWithColor>
+  <section class="py-64">
+    <GridContainer class="container" gap="1rem" minWidth="300px">
+      {[...Array(21)].map((_, index) => (
+        <Image
+          width={300}
+          height={420}
+          src={`/loja/loja-${String(index + 1).padStart(2, '0')}.webp`}
+          alt={`Maravillas de Loja ${index + 1}`}
+          class="w-full rounded-xl h-full object-cover"
+        />
+      ))
+  
+      }
+    </GridContainer>
+  </section>
+</Layout>

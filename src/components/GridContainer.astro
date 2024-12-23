@@ -1,0 +1,16 @@
+---
+interface Props {
+  gap?: string
+  minWidth?: string
+  class?: string
+}
+
+const { gap = "4rem", minWidth = "300px", class: className } = Astro.props
+---
+
+<div
+  class:list={["grid", className]}
+  style={{ gap: gap, gridTemplateColumns: `repeat(auto-fill,minmax(${minWidth},1fr))` }}
+>
+  <slot />  
+</div>
